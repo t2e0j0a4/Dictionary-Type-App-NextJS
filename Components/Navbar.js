@@ -4,17 +4,12 @@ import styles from '../styles/Home.module.css'
 
 const Navbar = () => {
   return (
-    
-    <header className={styles.header}>
-        <nav className={styles.nav}>
-          <ul>
+    <nav className={styles.navbar}>
+        <ul className={styles.navitems}>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
-            <li><Link href="/join">Join</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-          </ul>
-        </nav>
-    </header>
+        </ul>
+    </nav>
   )
 }
 

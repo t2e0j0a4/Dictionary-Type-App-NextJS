@@ -1,31 +1,153 @@
-.container {
-  padding: 0 2rem;
+.navbar {
+  width: 100%;
+  height: 50px;
+  max-width: 100%;
+  background-color: rgb(210, 194, 16);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 1px 1px 25px black;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  
+.navitems{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mainHead{
+.navitems li a {
+  margin: 0px 1.3rem;
+}
+
+.navitems li a:hover {
+  margin: 0px 1.3rem;
   color: white;
 }
 
-.header .nav{
-  display: flex;
+/* Dictionary */
+
+.dictionary{
+  padding: 20px 0;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  max-width: 90%;
+  height: 100%;
+  margin: 0px auto;
 }
 
-.header .nav ul {
+.dictionary .searchbar{
+  width: 70%;
+  margin: 0 auto;
+  height: 80px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
 }
 
-.header .nav ul li {
-  list-style-type: none;
-  margin: 0px 10px;
+.dictionary .searchbar input{
+  width: 90%;
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  margin: 0px 5px;
+  font-size: 15px;
+}
+
+.dictionary .searchbar .searchicon{
+  cursor: pointer;
+  color: white;
+  margin: 0px 5px;
+
+}
+
+/* Results */
+
+.results {
+  background-color: white;
+  width: 100%;
+  max-width: 70%;
+  margin: 60px auto;
+  border-radius: 5px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 30px 0;
+}
+
+.results .dictDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 7px 0;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.dictDetails p{
+  text-align: center;
+  margin: 3px 0;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.results h1{
+  margin: 15px 0 10px 0;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+.title{
+  margin: 15px 0 10px 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.results .meanings{
+
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  align-items: center;
+  justify-content: center;
+}
+
+.results .meanings p{
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 800;
+}
+
+.span {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+  .results {
+    background-color: white;
+    width: 100%;
+    max-width: 95%;
+    margin: 60px auto;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+  .dictionary .searchbar{
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
